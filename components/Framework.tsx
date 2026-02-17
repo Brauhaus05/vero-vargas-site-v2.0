@@ -2,6 +2,7 @@ import React from 'react';
 import { Section, AnimatedTitle, FadeIn } from './Section';
 import { Button } from './Button';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export const Framework: React.FC = () => {
   return (
@@ -23,22 +24,22 @@ export const Framework: React.FC = () => {
         <div className="flex flex-wrap items-center gap-3 md:gap-6 text-2xl md:text-4xl font-bold mb-16 text-[#E6E888]">
             {['Play', 'Engage', 'Clarity', 'Move', 'Build'].map((word, i, arr) => (
                 <React.Fragment key={word}>
-                    <motion-span 
+                    <motion.span 
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.3 + (i * 0.1) }}
                     >
                         {word}
-                    </motion-span>
+                    </motion.span>
                     {i < arr.length - 1 && (
-                        <motion-span 
+                        <motion.span 
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ delay: 0.35 + (i * 0.1) }}
                             className="text-[#F5F2EA]/50"
                         >
                             →
-                        </motion-span>
+                        </motion.span>
                     )}
                 </React.Fragment>
             ))}
@@ -55,7 +56,3 @@ export const Framework: React.FC = () => {
     </Section>
   );
 };
-
-// Quick helper for type-safety with motion components inline
-import { motion } from 'framer-motion';
-const MotionSpan = motion.span;
