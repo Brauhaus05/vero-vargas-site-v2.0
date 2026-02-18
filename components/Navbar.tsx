@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NAV_LINKS } from '../constants';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.svg';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,7 +16,7 @@ export const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#3D4236]/90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center text-[#F5F2EA]">
-        <a href="#" className="text-xl font-bold tracking-tight">vero vargas :)</a>
+        <a href="#"><img src={logo} alt="Vero Vargas" className="h-8" /></a>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-8">

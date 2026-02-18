@@ -1,12 +1,13 @@
 import React from 'react';
 import { Section, AnimatedTitle, FadeIn } from './Section';
+import vero2Image from '../assets/vero2.png';
 
 export const Practice: React.FC = () => {
   return (
     <>
         <div className="w-full h-[50vh] bg-[#F5F2EA] overflow-hidden">
              <img 
-                src="https://picsum.photos/1920/800" 
+                src={vero2Image} 
                 alt="Vero laughing" 
                 className="w-full h-full object-cover object-center grayscale opacity-80 hover:grayscale-0 transition-all duration-700"
             />
