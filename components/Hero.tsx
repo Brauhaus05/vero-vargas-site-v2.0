@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
       {/* Image Section */}
       <section className="relative w-full h-[60vh] md:h-[80vh] bg-[#7C8356]">
         <img 
-          src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" 
+          src="./assets/vero.png" 
           alt="Vero Vargas smiling" 
           className="w-full h-full object-cover object-top"
         />
