@@ -1,5 +1,6 @@
 import React from 'react';
 import { AnimatedTitle, FadeIn } from './Section';
+import VeroProfile from '../assets/vero_profile.jpg';
 
 export const Hero: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ export const Hero: React.FC = () => {
       {/* Image Section */}
       <section className="relative w-full h-[60vh] md:h-[80vh] bg-[#7C8356]">
         <img 
-          src="vero.png" 
+          src={VeroProfile} 
           alt="Vero Vargas smiling" 
           className="w-full h-full object-cover object-top"
         />
