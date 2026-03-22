@@ -5,12 +5,26 @@ import vero2Image from '../assets/vero2.png';
 export const Practice: React.FC = () => {
   return (
     <>
-        <div className="w-full h-[50vh] bg-[#F5F2EA] overflow-hidden">
-             <img 
-                src={vero2Image} 
-                alt="Vero laughing" 
+        <div className="w-full h-[50vh] bg-[#F5F2EA] overflow-hidden relative">
+             <img
+                src={vero2Image}
+                alt="Vero laughing"
                 className="w-full h-full object-cover object-center grayscale opacity-80 hover:grayscale-0 transition-all duration-700"
             />
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <svg width="245" height="211" viewBox="0 0 245 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clipPath="url(#clip0_73_2)">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M209.631 24.4383V54.7949C209.631 68.2917 198.653 79.2488 185.131 79.2488C171.609 79.2488 160.631 68.2917 160.631 54.7949V24.4383C160.631 10.9414 171.609 -0.015625 185.131 -0.015625C198.653 -0.015625 209.631 10.9414 209.631 24.4383Z" fill="#F1FF66"/>
+                        <path fillRule="evenodd" clipRule="evenodd" d="M84.2522 24.4383V54.7949C84.2522 68.2917 73.2744 79.2488 59.7521 79.2488C46.2297 79.2488 35.252 68.2917 35.252 54.7949V24.4383C35.252 10.9414 46.2297 -0.015625 59.7521 -0.015625C73.2744 -0.015625 84.2522 10.9414 84.2522 24.4383Z" fill="#F1FF66"/>
+                        <path fillRule="evenodd" clipRule="evenodd" d="M218.207 134.621C222.279 127.825 231.111 125.607 237.92 129.67C244.728 133.733 246.951 142.549 242.88 149.344C242.88 149.344 206.608 210.928 123.326 210.928C40.3285 210.928 2.21645 149.625 2.21645 149.625C-2.00939 142.924 0.0104956 134.06 6.72385 129.842C13.4364 125.624 22.318 127.64 26.5438 134.34C26.5438 134.34 57.2998 182.237 123.326 182.237C189.067 182.237 218.207 134.621 218.207 134.621Z" fill="#F1FF66"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_73_2">
+                            <rect width="245" height="211" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
         </div>
         <Section id="practice" className="bg-[#F5F2EA] text-[#3D4236]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
