@@ -4,7 +4,11 @@ import { Button } from './Button';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export const Framework: React.FC = () => {
+interface FrameworkProps {
+  onOpenModal?: () => void;
+}
+
+export const Framework: React.FC<FrameworkProps> = ({ onOpenModal }) => {
   return (
     <Section id="framework" className="bg-[#7C8356] text-[#F5F2EA]">
       <div className="max-w-4xl">
@@ -50,7 +54,7 @@ export const Framework: React.FC = () => {
             Play unlocks performance.<br />
             <span className="text-[#E6E888]">I make it make sense</span> — and make it fun.
           </h3>
-          <Button>Join The List</Button>
+          <Button onClick={onOpenModal}>Join The List</Button>
         </FadeIn>
       </div>
     </Section>

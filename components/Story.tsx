@@ -3,7 +3,11 @@ import { Section, AnimatedTitle, FadeIn } from './Section';
 import { Button } from './Button';
 import { STORY_ITEMS } from '../constants';
 
-export const Story: React.FC = () => {
+interface StoryProps {
+  onOpenModal?: () => void;
+}
+
+export const Story: React.FC<StoryProps> = ({ onOpenModal }) => {
   return (
     <Section id="story" className="bg-[#3D4236] text-[#F5F2EA] pb-32">
       <div className="max-w-4xl">
@@ -38,7 +42,7 @@ export const Story: React.FC = () => {
             <p className="opacity-80 leading-relaxed max-w-2xl">
                 From AI automation and service design to cross-functional alignment and performance tracking, I build the infrastructure that allows teams to grow intentionally and efficiently
             </p>
-            <Button>Shoot Me A Message</Button>
+            <Button onClick={onOpenModal}>Shoot Me A Message</Button>
         </FadeIn>
       </div>
     </Section>
