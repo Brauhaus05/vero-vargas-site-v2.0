@@ -63,11 +63,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.97 }}
         transition={{ duration: 0.2 }}
-        className="flex flex-row rounded-2xl overflow-hidden shadow-2xl max-w-2xl w-full"
+        className="flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-2xl max-w-2xl w-full"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Left panel */}
-        <div className="w-56 shrink-0 bg-[#7C8356] text-[#F5F2EA] p-10 flex flex-col justify-between">
+        <div className="w-full md:w-56 shrink-0 bg-[#7C8356] text-[#F5F2EA] p-8 md:p-10 flex flex-row md:flex-col justify-between md:justify-between gap-6 md:gap-0">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest opacity-60 mb-4">Connect</p>
             <h2 className="text-2xl font-bold leading-snug">
@@ -170,13 +170,17 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 </span>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/verovargas.yvr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-xs uppercase tracking-widest text-[#3D4236] opacity-50 hover:opacity-100 transition-opacity"
                   >
                     Instagram
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/veronica-vargas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-xs uppercase tracking-widest text-[#3D4236] opacity-50 hover:opacity-100 transition-opacity"
                   >
                     LinkedIn

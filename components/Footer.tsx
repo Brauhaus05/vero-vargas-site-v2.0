@@ -10,6 +10,10 @@ export const Footer: React.FC = () => {
             <p>Strategy, but fun. ©</p>
             <p>© {new Date().getFullYear()} Veronica Vargas Studio. All rights reserved.</p>
         </div>
+        <div className="flex gap-6 text-xs uppercase tracking-widest">
+          <a href="https://www.linkedin.com/in/veronica-vargas/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">LinkedIn</a>
+          <a href="https://www.instagram.com/verovargas.yvr/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">Instagram</a>
+        </div>
       </div>
     </footer>
   );
