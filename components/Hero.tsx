@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
               A strategic thinker with a creative edge.
             </h3>
             <p className="text-lg opacity-90 leading-relaxed mb-8">
-              I help brands get clear on their story, their strategy, and their systems — so they can grow with joy. 
+              I help brands get clear on their story, their strategy, and their systems so they can grow with joy. 
               <br />Whether we’re building your brand, mapping your marketing, or untangling your business ops, I bring clarity, creativity, and momentum.
             </p>
             <p className="text-[#E6E888] font-bold text-xl">

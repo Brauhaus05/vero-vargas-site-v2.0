@@ -30,7 +30,7 @@ export const Practice: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
             <AnimatedTitle className="text-5xl md:text-7xl mb-12">
-                The Grounding
+                The Practice
             </AnimatedTitle>
             <FadeIn>
                 <p className="font-bold mb-6">High performance isn’t just strategic. It’s physiological.</p>
