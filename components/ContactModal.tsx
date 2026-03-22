@@ -76,7 +76,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
           </div>
           <div>
             <p className="text-xs opacity-60 leading-relaxed mb-3">
-              Currently accepting new projects for Q4 2024.
+              Currently accepting new projects for 2026.
             </p>
             <span className="text-lg opacity-50">✧</span>
           </div>
