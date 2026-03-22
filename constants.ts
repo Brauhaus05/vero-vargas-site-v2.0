@@ -41,24 +41,8 @@ export const PHILOSOPHY_ITEMS = [
 ];
 
 export const STORY_ITEMS = [
-  {
-    role: "Copywriting",
-    desc: "Global brands — Corona, Heineken, Hyundai. Campaigns in festivals, retail spaces, city streets."
-  },
-  {
-    role: "Retail",
-    desc: "The power of visual storytelling."
-  },
-  {
-    role: "Branding",
-    desc: "Perception shapes reputation."
-  },
-  {
-    role: "Events",
-    desc: "Learning to listen deeply."
-  },
-  {
-    role: "Strategic Ops",
-    desc: "Designing systems that scale. Optimizing workflows. Translating vision into roadmaps."
-  }
+  "Retail taught me the power of visual storytelling.",
+  "Branding taught me that perception shapes reputation.",
+  "Events taught me to listen deeply.",
+  "Over time, creative direction evolved into strategic execution.",
 ];

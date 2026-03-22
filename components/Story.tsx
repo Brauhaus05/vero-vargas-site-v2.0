@@ -23,11 +23,10 @@ export const Story: React.FC = () => {
 
         <div className="space-y-8 mb-16">
           {STORY_ITEMS.map((item, index) => (
-            <FadeIn key={index} delay={0.1 * index} className="group">
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-8 border-b border-[#F5F2EA]/20 pb-8 transition-colors hover:border-[#E6E888]/50">
-                <h4 className="text-[#E6E888] font-bold text-lg">{item.role}</h4>
-                <p className="text-[#F5F2EA]/80 leading-relaxed group-hover:text-white transition-colors">{item.desc}</p>
-              </div>
+            <FadeIn key={index} delay={0.1 * index}>
+              <p className="text-[#F5F2EA]/80 leading-relaxed border-b border-[#F5F2EA]/20 pb-8 hover:text-white transition-colors">
+                {item}
+              </p>
             </FadeIn>
           ))}
         </div>
