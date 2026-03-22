@@ -16,7 +16,7 @@ export const Practice: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
             <AnimatedTitle className="text-5xl md:text-7xl mb-12">
-                The Practice
+                The Grounding
             </AnimatedTitle>
             <FadeIn>
                 <p className="font-bold mb-6">High performance isn’t just strategic. It’s physiological.</p>
@@ -32,18 +32,24 @@ export const Practice: React.FC = () => {
                     <li>Cold immersion strengthens composure under stress.</li>
                     <li>Heat creates space for release and reset.</li>
                 </ul>
+                <p className="mt-6 opacity-80 leading-relaxed">
+                    The same principles that drive sustainable business growth, awareness, adaptability, and momentum also drive human performance.
+                </p>
             </FadeIn>
             </div>
 
             <div className="pt-0 lg:pt-24">
                 <FadeIn delay={0.3}>
+                    <p className="mb-6 opacity-80 leading-relaxed">
+                        Whether I'm designing scalable systems or guiding a room through breath, the intention is the same:
+                    </p>
                     <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3D4236] leading-tight mb-8">
                         Grounded leaders.<br />
                         Clear thinking.<br />
                         Intentional action.
                     </h3>
                     <p className="text-lg opacity-80 leading-relaxed">
-                        This isn't a pivot. It's the same philosophy — applied to the human operating system.
+                        It’s the same philosophy,  applied to the human operating system.
                     </p>
                 </FadeIn>
             </div>

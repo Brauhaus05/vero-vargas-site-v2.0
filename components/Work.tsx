@@ -12,7 +12,7 @@ export const Work: React.FC = () => {
           </AnimatedTitle>
           <FadeIn delay={0.2}>
             <p className="text-lg leading-relaxed max-w-md">
-              I’m a marketing, brand, and operations consultant for founders, creatives, and small teams who want to grow smart — while actually enjoying the process.
+              I’m a marketing, brand, and operations consultant for founders, creatives, and small teams who want to grow smart, while actually enjoying the process.
             </p>
           </FadeIn>
         </div>
